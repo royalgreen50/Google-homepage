@@ -1,1 +1,1 @@
-build a clone of Google!
+build a clone of Google page!
