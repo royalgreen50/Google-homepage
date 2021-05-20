@@ -1,52 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google home page clone</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google home page clone</title>
+    </head>
 
-<body>
-    <nav class="nav 1"><a href="" class="about">About</a> <a href="" class="store">Store</a></nav>
-    <nav class="nav 2"><a href="" class="gmail">Gmail <a href="" class="Images">Images</a></nav>
-    <div class= "container">
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-    <input class="input" type="text" placeholder="search" ></input>
-    <button class="button">Google Search</button>
-    <button class="button">I feel Lucky</button>
-    <footer class="footer">&copy copyright 2021 Royal Green</footer>
-       
-    </div>
-     
-    <style>
-       .container{
-           display:flex;
-           flex-direction: column;
-           flex-wrap:wrap;
-           justify-content:center;
-       }
-       img{
-           width:40%;
-           align-self:center;
-       }
-       .input{
-           width:45%;
-           height: 10px;
-           align-self: center;
-       }
-       .button{
-           display:flex ;
-           flex-direction: column;
-           width:10%;
-            align-self: center;
-       }
-       .footer{
-           display:flex;
-           position: fixed;
-           bottom:0;
-       }
-       
-    </style>
-</body>
-</html>
+    <body>
+        <nav>
+            <ul class="left">
+                <li>
+                    <a href="" class="about">About</a>
+                </li>
+
+                <li>
+                    <a href="" class="store">Store</a>
+                </li>
+            </ul>
+            <ul class="right">
+                <li>
+                    <a href="" class="gmail">Gmail</a>
+                </li>
+
+                <li>
+                    <a href="" class="images">Images</a>
+                </li>
+                <li><a><Img></Img></a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            <input class="input" type="text" placeholder="search"></input>
+        <div class="button">
+            <button id="search">Google Search</button>
+
+
+            <button id="lucky">I feel Lucky</button>
+        </div>
+        <footer class="footer">&copy copyright 2021 Royal Green</footer>
+    </body>
+</html></div><style>
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+img {
+    width: 40%;
+    align-self: center;
+}
+.input {
+    width: 45%;
+    height: 10px;
+    align-self: center;
+}
+.button {
+    align-self: center;
+    flex-direction: row;
+    
+
+}
+
+#search {
+    background-color:whitesmoke;
+    margin: 10px;
+    opacity: .5;
+
+}
+#lucky {
+    background-color:whitesmoke;
+    margin: 10px;
+    opacity: .5;
+}
+.footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    align-self: center;
+}
+nav {
+    display: flex;
+
+    width: 100%;
+
+    margin: 0;
+
+}
+
+ul {
+    list-style-type: none;
+    display: inherit;
+    width: 100%;
+    align-self: center;
+
+}
+a {
+    color: #222;
+    text-decoration-line: none;
+    padding-left: 10px;
+}
+.left {
+    padding: 5px;
+    align-self: center;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+
+.right {
+    display: flex;
+    float: right;
+    justify-content: Flex-end;
+    padding: 5px;
+    margin: 10px;
+}</style></body></html>
